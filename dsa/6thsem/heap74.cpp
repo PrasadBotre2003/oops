@@ -187,7 +187,8 @@ cout<<"top "<<pq.top()<<endl;
 // min_heap
 
 
-priority_queue<int,vector<int>,greater<int>>minHeap;
+priority_queue<int,vector<int>,greater<in
+t>>minHeap;
 
 
 minHeap.push(10);
