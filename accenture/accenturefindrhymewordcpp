@@ -1,0 +1,76 @@
+#include<bits/stdc++.h>
+using namespace std;
+string cntmatching(vector<string>&str,string &word,int n){
+
+string temp = "";
+int malen = 0 ;
+
+
+for(auto j : str){
+
+
+
+if(word == j){
+    continue;
+}
+//skip the same string
+int len = 0 ;
+len = min(j.length(),word.length());
+
+int cnt = 0;
+
+for(int i = 1 ; i<= len ;i++){
+
+    if(word[word.length() - i] == j[j.length()-i]){
+cnt++;
+    }else{
+        break;
+    }
+
+
+
+
+
+}
+
+
+if(cnt>malen){
+    malen = cnt;
+
+    temp = j;
+    
+    
+    }
+
+
+
+
+
+
+
+}
+
+return temp;
+
+
+}
+
+
+int main(){
+
+string word  = "thunder";
+
+
+
+    vector<string>str = {"puzzle", "thunder","powder","blender","under"};
+
+int n1 = word.length();
+
+cout<<cntmatching(str,word,n1)<<endl;
+
+
+
+
+
+
+}
