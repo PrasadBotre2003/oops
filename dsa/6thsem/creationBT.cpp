@@ -147,10 +147,10 @@ int main() {
     node* root = NULL;
 
   //  buildFromLevelOrder(root);
-   levelOrderTraversal(root);
+   //levelOrderTraversal(root);
     // 1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
 
-    /*
+    
     //creating a Tree
     root = buildTree(root);
     //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1 
@@ -170,5 +170,5 @@ int main() {
 
 
     return 0;
-    */
+    
 }

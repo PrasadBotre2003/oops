@@ -2,12 +2,7 @@
 using namespace std;
 
 
-class hero{
-int health ;
-char ch[100] ;
 
-
-};
 class Node{
     public:
     int data;
